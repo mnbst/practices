@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>インドネシア語辞典.net</title>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/home.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+        </header>
+
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+
+                    <div class="navbar-inner">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/"><div class="sample">インドネシア語辞典.net</div></a>
+                            <!-- <a class="navbar-brand" href="#"><img src="./assets/katakata.png"></a> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="hidden-xs masthead">
+                <div class="intro-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="search-section col-md-offset-1 col-md-6">
+                                <h1 class="title">インドネシア語学習サイトです。<br> by watching subtitled Youtube videos!</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="new_video">
+                <div class="container">
+                    <div class="raw">
+                        <div class="col-md-12">
+                            <div class="minw">
+                                <div class="carousel slide" id="myCarousel">
+                                    <div class="carousel-add">
+                                        <div class="item active">
+                                            <div class="row">
+
+                                                <div id="thumb">
+                                                  <!-- insert thumbnails -->
+                                                    {{range .result}}
+                                                  <div class="col-sm-3 col-xs-12">
+                                                    <div class="thumbnail_v">
+                                                      <a href="/video/{{.Video_href}}">
+                                                        <div class="photo">
+                                                             <img class="img-responsive" src="{{.Video_img}}">
+                                                           <p>{{.Video_time}}</p>
+                                                        </div>
+                                                      </a>
+                                                      <div class="caption">
+                                                        <div class="caption-title">
+                                                          <h5><a href="/video/{{.Video_href}}">{{.Video_title}}</a></h5>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  {{end}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+              <ul class="table-ul">
+              	<li><a href="/dic/a">インドネシア語辞典</a></li>
+        			</ul>
+						</footer>
+    </body>
+</html>

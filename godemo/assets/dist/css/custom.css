@@ -1,0 +1,67 @@
+.list-group-item:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+.list-group-item:hover .buttons{
+    display: block;
+}
+
+.buttons {
+    position: absolute;
+    height: 20px;
+    width: 80px;
+    top: 10px;
+    right: 10px;
+    text-align: center; 
+    display: none;
+}
+
+.buttons .btn .fas {
+    width: 10px;
+    height: 10px;
+}
+
+.panel-footer small{
+    color: #999;
+}
+
+.form-main {
+    margin-top: 15px;
+  }
+  
+  .form-input-fields {
+   margin-bottom: 0; 
+  }
+  
+  .section-main {
+    margin-top:40px;
+    background-color: lightgrey;
+    padding: 20px 0;
+  }
+  .group-icon {
+    background-color:#fff;
+    border:0; 
+  }
+  .input-search {
+    border:1px solid #fff;
+    box-shadow:none;  
+  }
+  @media (max-width: 992px) {
+      .pull-left-sm {
+          float: left !important;
+      }
+    
+  }
+  @media (max-width: 767px) {
+      .nofloat-xs {
+          float: none !important;
+      }
+    .btn-submit {
+      margin-top:10px;
+    }
+  }
+
+  .text-wrap {
+    word-break: break-all;
+  }

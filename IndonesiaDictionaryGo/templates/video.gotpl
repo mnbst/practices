@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>インドネシア語辞典.net</title>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/videopage.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/responsive.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <script type="application/json" id="json-data">
+            {{.caption}}
+        </script>
+        <script src="../static/js/playpage.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        
+       <!--<h1>{{.id}}</h1>-->
+
+      <div class="col-md-12 text-center">
+          <div class="embed-responsive embed-responsive-16by9">
+              <div id="player"></div>
+          </div>
+      </div>
+
+      <div id="subtitle_area" class="col-md-12">
+          <div class="panel panel-default">
+              <div id="subtitle_block"></div>
+          </div>
+      </div>
+      
+      <div id="subtitle_detail_area"></div>
+
+      <footer>
+        <ul class="table-ul">
+  			     <li><a href="/">ホーム</a></li>
+  		  		 <li><a href="/dic/a">インドネシア語辞典</a></li>
+  		  </ul>
+      </footer>
+
+    </body>
+</html>
